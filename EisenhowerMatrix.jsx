@@ -5,12 +5,8 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || "";
-const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY || "";
-
-if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
-  console.error("Supabase environment variables are missing.");
-}
+const SUPABASE_URL = "https://tlbqrrshcgagrodidhct.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRsYnFycnNoY2dhZ3JvZGlkaGN0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzI0ODUwNzksImV4cCI6MjA0ODA2MTA3OX0.DN-5YhSkWn8dCpL6zbCMfbSMA7RJoffWJCF22bo2jHc";
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
